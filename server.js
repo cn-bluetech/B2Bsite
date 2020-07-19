@@ -39,10 +39,10 @@ app.use(function(req, res, next) {
 });
 
 //setting up connection with mysql database
-db.db.getConnection(err =>{
-    if(err) throw err;
-    console.log('Database is connected');
-});
+// db.db.getConnection(err =>{
+//     if(err) throw err;
+//     console.log('Database is connected');
+// });
 
 // initializing port on server
 let port = process.env.PORT;
