@@ -1,0 +1,38 @@
+<script src="https://code.jquery.com/jquery-3.4.0.slim.min.js"
+    integrity="sha384-7WBfQYubrFpye+dGHEeA3fHaTy/wpTFhxdjxqvK04e4orV3z+X4XC4qOX3qnkVC6" crossorigin="anonymous">
+</script>
+<script>
+    $('.container').fsScroll({
+        keyboard: true,
+        loop: false,
+        duration: 2000,
+
+        beforeScroll: function (el, index) {
+            el.find('h1').addClass('text-animate');
+        },
+
+        afterScroll: function (el, index) {
+            el.find('h1').removeClass('text-animate');
+        }
+    })
+    $('.mobile-nav-a').click(function () {
+        $(this).toggleClass('magictime puffIn');
+    })
+    $('.facebook').hover(function () {
+        $(this).toggleClass('magictime puffIn');
+    })
+    $('.gmail').hover(function () {
+        $(this).toggleClass('magictime puffIn');
+    })
+    $('.youtube').hover(function () {
+        $(this).toggleClass('magictime puffIn');
+    })
+    $('.instagram').hover(function () {
+        $(this).toggleClass('magictime puffIn');
+    })
+    
+    function hide(){
+        $('.socialNetwork').addClass('magictime slideLeft');
+    }
+</script>
+</body>

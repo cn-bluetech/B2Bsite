@@ -1,0 +1,45 @@
+<div class="uk-position-relative">
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" style="background: transparent;">
+        <nav class="uk-navbar uk-navbar-container uk-margin m-0">
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="/mobile" class="p-0 pb-1 animate__animated animate__fadeInDown"><img
+                                src="../img/logo-img.png" style="height: 5vh;" alt="logo-image" uk-img></a>
+                    </li>
+                    <li>
+                        <a href="/mobile" class="pl-0 animate__animated animate__fadeInDown"><img
+                                src="../img/brand-name.png" style="height: 6vh;" alt="logo-image" uk-img></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                <span uk-navbar-toggle-icon='ratio: 2' class="uk-navbar-toggle white-text uk-text-bolder"
+                    uk-toggle="target: #offcanvas-flip"></span>
+            </div>
+        </nav>
+    </div>
+
+    <!-- slide nav -->
+    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column bg" style="opacity: .9;">
+            <button class="uk-offcanvas-close white-text" type="button" uk-close='ratio: 2'></button>
+            <ul class="uk-nav uk-nav-primary uk-nav-left uk-margin-auto-vertical">
+                <li>
+                    <a href="/mobile" class="pl-0 animate__animated animate__fadeInDown"><img
+                            src="../img/brand-name.png" style="height: 6vh;" alt="logo-image" uk-img></a>
+                </li>
+                <li class="uk-active mobile-nav-a white-text"><a href="/mobile">Home</a></li>
+                <li class="uk-parent">
+                    <a href="/products" class="mobile-nav-a white-text">Product</a>
+                </li>
+                <li><a href="#" class=" mobile-nav-a white-text">About Us</a></li>
+                <li><a href="#" class=" mobile-nav-a white-text">Support</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#" class=" mobile-nav-a white-text">Services</a></li>
+                <li><a href="#" class=" mobile-nav-a white-text">News</a></li>
+                <li><a href="#" class=" mobile-nav-a white-text">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
